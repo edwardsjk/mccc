@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572969881196.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C27F6796",
+    "lastKnownWriteTime" : 1572969953,
+    "last_content_update" : 1572969953483,
+    "path" : "~/Box Sync/Research/clinical continuum/packages/mccc/R/utilities.R",
+    "project_path" : "R/utilities.R",
+    "properties" : {
+        "cursorPosition" : "73,91",
+        "scrollLine" : "48"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
