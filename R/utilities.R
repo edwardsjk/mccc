@@ -15,7 +15,7 @@ require(resample)
 #' @return data frame with event times and cumulative incidence function for outcome of interest
 #' @export
 #' @examples
-#'  prop<-comp.cens.cor(data=art, tau=2*365.25, t="t", delta="j", p=0.24, N=1000)
+#'  prop<-comp.cens.cor(data=art, tau=2*365.25, t="t", delta="j", p=0.24)
 
 
 comp.cens.cor<-function(data=data, tau, t="t", delta="delta", weights="NULL",  p="p"){
@@ -126,7 +126,7 @@ risk <- function(data = data, t = "t", delta = "y", level=1,  tau=4, weights = "
   }
   else{ajs <- survfit(Surv(t, status*delta, type='mstate')  ~ 1, data = data, weights=weights)}
 
-  ci <- ajs$pstate[,level]
+  ci <- ajs$pstate[,level+1]
   times <- data$t[data$t<=tau]
   t1 <-ajs$time
   cif1 <- stepfun(ajs$time, c(0, ci), right=TRUE)
